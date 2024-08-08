@@ -44,7 +44,7 @@ margin-bottom: 15px;
 .logo_footer {
     width:157px;
         height:55px;
-    background-image: url('/img/logo_footer-min.svg');
+    background-image: url('./img/logo_footer-min.svg');
     
 }
 .footer_img {
@@ -69,7 +69,7 @@ margin-bottom: 15px;
     .logo_footer {
         width:307px;
         height:108px;
-        background-image: url('/img/logo_footer.svg');
+        background-image: url('./img/logo_footer.svg');
         margin-bottom: 178px;
     }
     .footer_img {
