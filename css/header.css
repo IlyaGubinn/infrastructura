@@ -1,0 +1,152 @@
+.header {
+    
+    max-width: 100%;
+
+
+}
+
+.header_btn{
+    color: white;
+    background-color: inherit;
+    padding: 5px;
+    border: 1px white solid;
+}
+.header_btn-list svg {
+    background-color: transparent; 
+          fill: white; 
+            text-align: center; 
+            text-decoration: none; 
+            display: inline-block; 
+           
+          
+}
+.header_btn-list{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+.nav_list {
+   padding:0;
+    display: flex;
+    
+   align-items: center;
+   justify-content: space-between;
+  
+   
+ .nav_list-logo{
+    padding: 10px 0;
+ }
+  .nav_list-text {
+   
+    display: none;
+    
+    a {padding: 18px 0; text-decoration: none;
+        color: white;
+        line-height: 27px;
+        font-size: 16px;
+    };
+  }
+  ul {
+    padding: 0;
+    
+    
+    display: flex;
+    line-height: 27px;
+    font-size: 16px;
+    font-weight: 300;
+    align-items: center;
+    color: white;
+    gap: 0 60px;
+
+   }
+}
+/* styles.css */
+.logo {
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.logo {
+    width:71px;
+        height:25px;
+    background-image: url('/img/logo_min.svg');
+}
+.lang{
+    display: none;
+    color: white;
+    background-color: inherit;
+    padding: 5px;
+    border: none;
+    
+}
+
+.open{
+    display: flex !important;
+}
+
+.nav_list-burger{
+    color: white;
+    display: none;
+    flex-direction: column;
+    gap: 60px 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 46px; bottom: 0; left: 0; right: 0;
+    z-index: 50;
+    overflow-y: auto;
+    padding: 50px 40px;
+    background-color: black;
+    animation: burgerAnimation 0.4s;
+    ul{
+        flex-direction: column;
+        row-gap: 60px;
+    }
+    a{ text-decoration: none;
+        color: white;
+        line-height: 27px;
+        font-size: 16px;}
+    background-image: url(/img/burger_bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 45px center;
+}
+.burger {
+   
+     display: flex ;
+        position: relative;
+        z-index: 50;
+        align-items: center;
+        justify-content: flex-end;
+        width: 30px;
+        height: 18px;
+  
+}  
+.hidden{
+    overflow:hidden;
+}
+
+/* Логотип для экранов шире 1000px */
+@media (min-width: 1200px) {
+    
+    .logo {
+        width:126px;
+        height:44px;
+        background-image: url('/img/logo.svg');
+    }
+    .burger{
+        display: none;
+    }
+   .lang{
+    display: block;
+   }
+   .nav_list-burger{
+    display: none;
+   
+}
+}
+@keyframes burgerAnimation {
+    from {opacity: 0}
+    to {opacity: 1}
+}
