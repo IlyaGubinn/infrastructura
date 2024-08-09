@@ -71,7 +71,7 @@
 .logo {
     width:71px;
         height:25px;
-    background-image: url('./img/logo_min.svg');
+    background-image: url('/img/logo.svg');
 }
 .lang{
     display: none;
@@ -108,7 +108,7 @@
         color: white;
         line-height: 27px;
         font-size: 16px;}
-    background-image: url(/img/burger_bg.svg);
+        background-image: url('/img/burger_bg.svg');
     background-repeat: no-repeat;
     background-position: bottom 45px center;
 }
