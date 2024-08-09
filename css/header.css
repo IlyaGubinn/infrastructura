@@ -71,7 +71,7 @@
 .logo {
     width:71px;
         height:25px;
-    background-image: url('/img/logo_min.svg');
+    background-image: url('./img/logo_min.svg');
 }
 .lang{
     display: none;
